@@ -1,0 +1,106 @@
+* , ::after ,::before{
+    box-sizing: border-box;
+}
+:root{
+  --content:#F8C246;
+}
+body {
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  max-width: 800px; /* Max width */
+  padding: 20px;
+}
+
+.container{
+    display:inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     
+    
+}
+.Header{
+    font-size: 40px;
+    text-align: center;
+    
+}
+.content{
+    float: left;
+    
+}
+
+.score{
+    font-size: 40px;
+    font-weight: bold;}
+    .checked {
+        color: 	var(--content)	;
+      }
+   .rating-space{
+       display: inline;
+
+   }
+/* Three column layout */
+.side {
+    float: left;
+     /* width: 15%; */
+     margin: 5px;
+    
+    
+    
+    
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+/* Place text to the right */
+
+  .right {
+    text-align: right;
+  }
+  
+
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+ 
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+      display:inline;
+    }
+    /* Hide the right column on small screens */
+    .right {
+      display: none;
+    }
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 100%; height: 15px; background-color: var(--content);}
+  .bar-4 {width: 7.82%; height: 15px; background-color: var(--content)}
+  .bar-3 {width: 1%; height: 15px; background-color: var(--content);}
+  .bar-2 {width: 0.05%; height: 15px; background-color: var(--content);}
+  .bar-1 {width: 0.01%; height: 15px; background-color: var(--content);}
+  
+.bnt-space{
+  float: right;
+  margin-top:20px;
+   
+}
+.row-5,.row-4,.row-3, .row-2, .row-1  {
+  opacity: 0.5;
+}
+
+
